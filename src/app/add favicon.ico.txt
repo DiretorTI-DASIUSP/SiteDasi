@@ -1,0 +1,1 @@
+exclude this file and add "favicon.ico" in this folder
