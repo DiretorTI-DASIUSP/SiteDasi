@@ -8,14 +8,6 @@ import React from 'react'
 export default function Inicio() {
   return (
     <div className='container-page'>
-      <header>
-        <tr>
-          <td>aaaa</td>
-          <td>bbbb</td>
-          <td>cccc</td>
-        </tr>
-      </header>
-
       <main>
         <h1>Titulo</h1>
         <p>Olá, bem-vindo ao meu site</p>
