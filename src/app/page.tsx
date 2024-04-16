@@ -8,7 +8,7 @@ import React from 'react'
 export default function Inicio() {
   return (
     <div className='container-page'>
-      <header>esse será o header da páginaaaaaaaaaaa</header>
+      <header>esse será o header da páginaaaaaaaaaaaaaaaaa</header>
 
       <main>
         <h1>Titulo</h1>
