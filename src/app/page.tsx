@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../components/Header'
 
 /**
  Essa é a página inicial do site, no next, a pagina com o nome "page",
@@ -8,6 +9,9 @@ import React from 'react'
 export default function Inicio() {
   return (
     <div className='container-page'>
+      {/* Header */}
+      <Header />
+
       <main>
         <h1>Titulo</h1>
         <p>Olá, bem-vindo ao meu site</p>
