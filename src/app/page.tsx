@@ -9,7 +9,6 @@ import Header from '../components/Header'
 export default function Inicio() {
   return (
     <div className='container-page'>
-      {/* Header */}
       <Header />
 
       <main>
