@@ -11,6 +11,7 @@ export default function Inicio() {
       <main>
         <h1>Titulo</h1>
         <p>Olá, bem-vindo ao meu site</p>
+        <p>Texto de teste</p>
       </main>
 
       <footer>Esse daqui é o footer</footer>
