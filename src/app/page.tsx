@@ -13,7 +13,7 @@ export default function Inicio() {
         <p>Olá, bem-vindo ao meu site</p>
       </main>
 
-      <footer>Esse daqui é o footer!</footer>
+      <footer>Esse daqui é o footer</footer>
     </div>
   )
 }
