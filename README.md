@@ -1,34 +1,60 @@
-Este é um projeto [Next.js](https://nextjs.org/) inicializado com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Bem vindos ao website do DASI!</h1>
 
-## Começando
+<div align = "center">
+<img src = "https://img.shields.io/badge/HTML-551cb8?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src = "https://img.shields.io/badge/CSS-551cb8?&style=for-the-badge&logo=css3&logoColor=white"/>
+<img src = "https://img.shields.io/badge/JavaScript-551cb8?style=for-the-badge&logo=javascript&logoColor=white"/>
+<img src = "https://img.shields.io/badge/TypeScript-551cb8?style=for-the-badge&logo=typescript&logoColor=white"/>
+<img src = "https://img.shields.io/badge/React-551cb8?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+<img src = "https://img.shields.io/badge/styled--components-551cb8?style=for-the-badge&logo=styled-components&logoColor=white"/>
+</div>
 
-Primeiro, execute o servidor de desenvolvimento:
+## ⚙️ Configuração do Ambiente
 
-```bash
-npm run dev
-# ou
-yarn dev
-# ou
-pnpm dev
-```
+Antes de começar a produzir, verifique se você possui todas as dependências instaladas na sua máquina para que você consiga produzir sem dor de cabeça. Veja aqui o que será necessário:
+<details>
+  <summary><strong>Node.js & NPM</strong></summary>
+    <p>  Uma versão do node >= 16 já será o suficiente para rodar o projeto, mas recomenda-se estar com a versão mais atualizada no node para permitir que implementações futuras não entrem em conflito com a versão em sua máquina.</p>
 
-Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+  #### LINUX 
+  <img src = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTd6NmxhcXY1dHZlNTFrNm9tNXM2b2M4cWFmMndmNnZnd3FtOG9vOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QLag0hPew7yVRyncTv/giphy.gif"/>
 
-Você pode começar a editar a página modificando `app/page.tsx`. A página será atualizada automaticamente conforme você edita o arquivo.
+  #### WINDOWS
+  Basta ir ao site do ![Node](https://nodejs.org/en/download) e baixar a versão **LTS** (Long-term support).
+</details>
 
-Este projeto utiliza [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) para otimizar e carregar automaticamente a fonte Inter, uma fonte personalizada do Google.
+> [!NOTE]
+> O resto das dependências são todas instaladas **apenas** no ambiente de desenvolvimento.
 
-## Saiba Mais
+## 🤝 Como Contribuir
+Aqui constam as instruções para você fazer parte da criação deste belíssimo site:
 
-Para saber mais sobre o Next.js, dê uma olhada nos seguintes recursos:
+1. Escolha uma task para fazer, elas estão disponíveis em nosso **ClickUp**. Caso você ainda não tenha acesso, entre em contato com o diretor responsável pelo desenvolvimento do site.
+   
+2. Clone este repositório remoto em sua máquina, em seu **terminal** digite:
+   ```bash
+   git clone https://github.com/DiretorTI-DASIUSP/SiteDasi.git
+   
+   cd SiteDASI/
 
-- [Documentação do Next.js](https://nextjs.org/docs) - aprenda sobre os recursos e a API do Next.js.
-- [Aprenda Next.js](https://nextjs.org/learn) - um tutorial interativo do Next.js.
+   npm install
+   ```
+   
+3. Lembre-se de alterar a **branch**, pois todo o desenvolvimento é realizado na **branch desenvolvimento**.
+   ```
+   git checkout desenvolvimento
+   ```
+4. Após terminar sua task, basta mandar suas modificações locais para este repositório remoto:
+   ```bash
+   git add .
 
-Você pode conferir [o repositório do Next.js no GitHub](https://github.com/vercel/next.js/) - seus feedbacks e contribuições são bem-vindos!
+   git commit -m "feat: adicionei um negócio bem legal hein"
 
-## Implante na Vercel
+   git push origin desenvolvimento
+   ```
+   
+5. Por fim, basta vir aqui no **Github** e pedir uma **Pull Request**. Vamos analisar seu código e te dar um feedback!
 
-A maneira mais fácil de implantar seu aplicativo Next.js é usando a [Plataforma Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) dos criadores do Next.js.
 
-Confira nossa [documentação de implantação do Next.js](https://nextjs.org/docs/deployment) para mais detalhes.
+> [!WARNING]
+> Lembre-se de realizar um ```git fetch``` sempre que for começar algo, assim não haverá conflito na hora do ```git push```.
