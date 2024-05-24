@@ -39,9 +39,9 @@ Aqui constam as instruções para você fazer parte da criação deste belíssim
    npm install
    ```
    
-3. Lembre-se de alterar a **branch**, pois todo o desenvolvimento é realizado na **branch desenvolvimento**.
+3. Lembre-se de criar uma **branch** para a sua task. Exemplo: headerFoto
    ```
-   git checkout desenvolvimento
+   git checkout -b headerFoto
    ```
 4. Após terminar sua task, basta mandar suas modificações locais para este repositório remoto:
    ```bash
@@ -49,7 +49,7 @@ Aqui constam as instruções para você fazer parte da criação deste belíssim
 
    git commit -m "feat: adicionei um negócio bem legal hein"
 
-   git push origin desenvolvimento
+   git push origin headerFoto
    ```
    
 5. Por fim, basta vir aqui no **Github** e pedir uma **Pull Request**. Vamos analisar seu código e te dar um feedback!
