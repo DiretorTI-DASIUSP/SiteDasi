@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import Exemplo from "@/components/Exemplo";
+//import Exemplo from "@/components/Exemplo";
+import Header from "@/components/Header";
+
 
 export default function Home() {
   return (
@@ -10,9 +12,16 @@ export default function Home() {
         <meta name="description" content="Website do Diretório Acadêmico de Sistemas de Informação"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+
+        {/* * * * * * *  FONTES * * * * * * */}
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+
       </Head>
       <main>
-        <Exemplo/>
+        {/* <Exemplo/> */}
+        <Header />
       </main>
     </>
   );
