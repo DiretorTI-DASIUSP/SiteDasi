@@ -1,119 +1,115 @@
 import React from "react";
+
 import styled from "styled-components";
-import Navbar from "./Navbar";
+import Navigation from "./Navigation";
 
 function Header() {
-    return (
-        <Head>
-            <h1>DASI</h1>
-            <Container>
-                <Navbar />
-                <BoxTitulo>
-                    <h2 className="tituloPrincipal">Diretório Acadêmico</h2>
-                    <h3 className="subtitulo">Sistemas de Informação</h3>
-                </BoxTitulo>
-            </Container>
-            
-        </Head>
+    return(
+        <HeaderWrapper>
+            <MainContainer>
+                <h1>DASI</h1>
+                <Navigation />
+                <TitleBox>
+                    <h2 className="mainTitle">Diretório Acadêmico</h2>
+                    <h3 className="subtitle">Sistemas de Informação</h3>
+                </TitleBox>
+            </MainContainer>
+        </HeaderWrapper>
     )
 }
 
-
-const Head = styled.header`
-
-    background: url(/images/header-background.png) no-repeat;
+const HeaderWrapper = styled.header`
+    background: url(/images/header-mobile.png) center no-repeat;
     background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
+    position: relative;
+    width: 100%;
     height: 100vh;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    position: relative;
+    overflow: hidden;
     h1 {
+        display: none;
         height: 100%;
         font-family: "Oswald", sans-serif;
         text-align: center;
         color: #ffffff0d;
-        font-size: 37.5em; /*600px*/
+        font-size: 30em; 
         letter-spacing: 0.12em;
         position: absolute;
-        left: 52%;
-        transform: translate(-50%, 0);
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
     }
-    @media (max-width: 760px) {
-        h1 { display: none; }
+    @media (min-width: 760px) {
+        background: url(/images/header-desktop.png) center top no-repeat;
+        background-size: cover;
+        h1 { display: block; top: 55%;}
+    }
+    @media (min-width: 1150px) {
+        h1 { font-size: 37.5em; top: 50%; letter-spacing: 0.2em; left: 53%; }
     }
 `
-const Container = styled.section`
-    width: 80vw;
-    height: 65vh;
+
+const MainContainer = styled.section`
+    width: 95%;
+    height: 63vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content:  space-between;
     text-align: center;
-    padding-top: 0px; 
     z-index: 1;
-    @media (max-width: 1050px) {
-        width: 90vw;
-    }
-    @media (max-width: 760px) {
-        width: 100vw;
-    }
-    @media (max-width: 475px) {
-        height: 60vh;
-    }
+
+    @media (min-width: 480px) { height: 65vh; }
+    @media (min-width: 760px) { width: 100%; height: 70vh; }
 `
-const BoxTitulo = styled.div`
-    margin-top: 1.25em;
+const TitleBox = styled.div`
+    margin-top: 25%;
     text-align: center;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 7.5px;
 
-    .tituloPrincipal {
+    .mainTitle {
         color: #d9d9d9;
         font-family: "Montserrat", sans-serif;
-        letter-spacing: 10%;
-        font-size: 6em; 
+        font-size: 6em;
+        letter-spacing: 0.1em;
         line-height: 120%;
         text-shadow: 0 7px 4px #6000FA;
     }
-    .subtitulo {
+    .subtitle {
+
         font-family: "Roboto", sans-serif;
-        font-size: 4em; /*64px*/
-        margin-top: 10px;
-        width: 100%;
+        font-size: 4em; 
+        width: 90%;
+        margin-top: 0.4em;
         line-height: 120%;
-        padding-bottom: -80px;
         position: relative;
-        text-align: center;
         z-index: 1;
     }
-    .subtitulo::after {
+    .subtitle::after {
         content: '';
         position: absolute;
         bottom: 0.015em; 
         left: 50%;
-        transform: translateX(-50%);
-        width: 14em;
-        height: 29px; 
-        background: #6000facc;
+        top: 85%;
+        transform: translate(-50%, -50%);
+        width: 65%;
+        height: 19px;
+        background-color: #6000facc;
         z-index: -1;
     }
-    @media (max-width: 931px) {
-        .subtitulo::after { width: 10em }
-    }
-    @media (max-width: 760px) {
-        font-size: 12px;
-        .subtitulo::after { width: 13em }
-    }
-    @media (max-width: 475px) {
-        font-size: 7.5px;
-        .subtitulo::after { width: 95%; height: 19px;}
-    }
-    @media (max-width: 390px) {
-        .subtitulo::after { width: 7.5em;}
-    }
+    @media (min-width: 460px) { .subtitle { width: auto; } .subtitle::after { width: 100%; } }
+    @media (min-width: 760px) { font-size: 12px; .subtitle::after { height: 29px; } }
+    @media (min-width: 931px) { font-size: 15px; margin-top: 15%; }
+    @media (min-width: 1420px) { font-size: 16px; }
 `
+
 export default Header;
