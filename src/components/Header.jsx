@@ -21,7 +21,7 @@ function Header() {
 
 const Head = styled.header`
 
-    background: url(/images/headerFoto.png) no-repeat;
+    background: url(/images/header-background.png) no-repeat;
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
