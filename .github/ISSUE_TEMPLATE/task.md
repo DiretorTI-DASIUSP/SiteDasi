@@ -8,16 +8,16 @@ assignees: ''
 ---
 
 **O que deve ser feito?**
-Criar e implementar um componente teste.jsx...
+Criar e implementar um componente teste.jsx
 
 **Como deve ser feito?**
-Criar o arquivo na src/componenets chamado  teste.jsx...
+Criar o arquivo na `src/componenets` chamado  teste.jsx
 
 **O que deve ser utilizado?**
 Colocar imagem, descrição, etc...
 
 **Dificuldade**
-Fácil, Médio ou Díficil.
+Fácil, Médio ou Difícil.
 
 **Prazo**
 Definir prazo de 15 dias a partir do dia que pegar a task.
