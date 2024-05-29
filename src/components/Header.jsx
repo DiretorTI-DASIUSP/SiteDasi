@@ -43,6 +43,11 @@ const HeaderWrapper = styled.header`
         top: 60%;
         transform: translate(-50%, -50%);
         z-index: -1;
+
+        -webkit-user-select: none;  
+        -moz-user-select: none;     
+        -ms-user-select: none;    
+        user-select: none; 
     }
     @media (min-width: 760px) {
         background: url(/images/header-desktop.png) center top no-repeat;
