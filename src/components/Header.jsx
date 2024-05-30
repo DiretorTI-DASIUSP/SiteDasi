@@ -2,7 +2,7 @@ import React, {useEffect, useRef, useState} from "react";
 import styled from "styled-components";
 import Navigation from "./Navigation";
 
-export default function Header2() {
+export default function Header() {
 
     return (
         <HeaderWrapper>
