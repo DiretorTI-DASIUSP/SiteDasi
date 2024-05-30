@@ -1,120 +1,121 @@
-import React from "react";
-
+import React, {useEffect, useRef, useState} from "react";
 import styled from "styled-components";
 import Navigation from "./Navigation";
 
-function Header() {
-    return(
+export default function Header2() {
+
+    return (
         <HeaderWrapper>
-            <MainContainer>
-                <h1>DASI</h1>
-                <Navigation />
-                <TitleBox>
-                    <h2 className="mainTitle">Diretório Acadêmico</h2>
-                    <h3 className="subtitle">Sistemas de Informação</h3>
-                </TitleBox>
-            </MainContainer>
+            <BackText>dasi</BackText>
+            <Navigation />
+            <TitleBox>
+                <h2 className="mainTitle">Diretório Acadêmico</h2>
+                <h3 className="subtitle">Sistemas de Informação</h3>
+            </TitleBox>
         </HeaderWrapper>
     )
 }
 
-const HeaderWrapper = styled.header`
+const HeaderWrapper = styled.header `
     background: url(/images/header-mobile.png) center no-repeat;
     background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 100vh;
     color: #fff;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
-    overflow: hidden;
-    h1 {
-        display: none;
-        height: 100%;
-        font-family: "Oswald", sans-serif;
-        text-align: center;
-        color: #ffffff0d;
-        font-size: 30em; 
-        letter-spacing: 0.12em;
-        position: absolute;
-        left: 50%;
-        top: 60%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
+    justify-content: center;
 
-        -webkit-user-select: none;  
-        -moz-user-select: none;     
-        -ms-user-select: none;    
-        user-select: none; 
-    }
-    @media (min-width: 760px) {
-        background: url(/images/header-desktop.png) center top no-repeat;
-        background-size: cover;
-        h1 { display: block; top: 55%;}
-    }
-    @media (min-width: 1150px) {
-        h1 { font-size: 37.5em; top: 50%; letter-spacing: 0.2em; left: 53%; }
-    }
+    @media (min-width: 760px) { background: url(/images/header-desktop.png) center top / cover no-repeat; }
 `
 
-const MainContainer = styled.section`
-    width: 95%;
-    height: 63vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:  space-between;
-    text-align: center;
-    z-index: 1;
-
-    @media (min-width: 480px) { height: 65vh; }
-    @media (min-width: 760px) { width: 100%; height: 70vh; }
-`
-const TitleBox = styled.div`
-    margin-top: 25%;
+const BackText = styled.div `
+    position: fixed;
+    color: rgba(255, 255, 255, 0.05);
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 30vw; /*37.5rem*/
+    font-weight: 700;
+    letter-spacing: 2rem;
+    padding-left: 2rem;
+
+    -webkit-user-select: none;  
+    -moz-user-select: none;     
+    -ms-user-select: none;    
+    user-select: none; 
+
+    @media (min-width: 760px) {
+        font-size: 35vw;
+        letter-spacing: 4rem;
+        padding-left: 2rem;
+    }
+`
+
+const TitleBox = styled.div `
+    color: #d9d9d9;
+    min-height: 85%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 7.5px;
+    /*justify-content: start;*/
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+
+    @media (min-width: 430px) { padding-bottom: 140px; }
+    @media (min-width: 530px) { padding-bottom: 80px; }
+    @media (min-width: 800px) { padding-bottom: 120px; }
+    @media (min-width: 1000px) { padding-bottom: 50px; }
 
     .mainTitle {
-        color: #d9d9d9;
+        font-size: 2.5rem;
         font-family: "Montserrat", sans-serif;
-        font-size: 6em;
-        letter-spacing: 0.1em;
+        text-shadow: 0 4px 4px #6000FA;
+        font-weight: 700;
         line-height: 120%;
-        text-shadow: 0 7px 4px #6000FA;
+        letter-spacing: 0.25rem;
+
+        @media (min-width: 580px) { font-size: 3rem; }
+        @media (min-width: 890px) {
+            font-size: 5.2rem;
+            text-shadow: 0px 7px 4px #6000FA;
+            letter-spacing: 0.5rem;
+        }
+        @media (min-width: 1100px) { font-size: 5.4rem; }
+        @media (min-width: 1390px) { font-size: 6rem; }
     }
     .subtitle {
-
         font-family: "Roboto", sans-serif;
-        font-size: 4em; 
-        width: 90%;
-        margin-top: 0.4em;
+        font-size: 2rem;
         line-height: 120%;
+        letter-spacing: 0.1rem;
+        margin-top: 0.4rem;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         position: relative;
         z-index: 1;
-    }
-    .subtitle::after {
-        content: '';
-        position: absolute;
-        bottom: 0.015em; 
-        left: 50%;
-        top: 85%;
-        transform: translate(-50%, -50%);
-        width: 65%;
-        height: 19px;
-        background-color: #6000facc;
-        z-index: -1;
-    }
-    @media (min-width: 460px) { .subtitle { width: auto; } .subtitle::after { width: 100%; } }
-    @media (min-width: 760px) { font-size: 12px; .subtitle::after { height: 29px; } }
-    @media (min-width: 931px) { font-size: 15px; margin-top: 15%; }
-    @media (min-width: 1420px) { font-size: 16px; }
-`
 
-export default Header;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0.015em; 
+            left: 50%;
+            top: 85%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            height: 19px;
+            background-color: #6000facc;
+            z-index: -1;
+        }
+
+        @media (min-width: 455px) { &::after { width: 103%; } }
+        @media (min-width: 890px) {
+            font-size: 3.4rem;
+            &::after { height: 29px; letter-spacing: 0.2rem; }
+        }
+        @media (min-width: 1100px) { font-size: 4rem; }
+    }
+`

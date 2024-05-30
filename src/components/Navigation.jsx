@@ -12,8 +12,7 @@ function Navigation() {
 
 const Navbar = styled.nav `
     width: 90%;
-    min-height: 64px;
-    margin-top: 40px;
+    min-height: 15%; /*64px - mobile*/
 `
 
 export default Navigation;

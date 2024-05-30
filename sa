@@ -1,0 +1,64 @@
+[33m674c659[m[33m ([m[1;36mHEAD -> [m[1;32mheader-back-titulo[m[33m)[m Propriedade 'user-select: none'adicionada
+[33mdb7dfbf[m[33m ([m[1;31morigin/header-back-titulo[m[33m)[m Merge branch 'main' into header-back-titulo
+[33m0b2ac53[m Teste (#25)
+[33m54f3566[m feat: teste2
+[33ma44308a[m Merge branch 'main' into header-back-titulo
+[33m0bb9f2d[m feat: add textt
+[33me56fed8[m Arrumando o Header conforme o princício de mobile-first
+[33m356df59[m Delete .github/ISSUE_TEMPLATE directory
+[33me6a1917[m Update issue templates
+[33m4ca994a[m Delete CONTRIBUTING.md
+[33mc3e5e50[m Create CONTRIBUTING.md (#20)
+[33me273c07[m Create CONTRIBUTING.md
+[33m1b974d6[m Create CODE_OF_CONDUCT.md
+[33me3301ec[m Header = background e titulo (teste)
+[33m3836a7e[m Renomeando foto do Dasi para header-background.png
+[33m7c1e096[m Background e título do Header adicionados
+[33m2e75a46[m feat: og img width and heigth (#18)
+[33m844cef2[m feat: og img width and heigth
+[33mf539a60[m style: globals.css reset (#17)
+[33m6209313[m style: globals.css reset
+[33me544166[m Update README.md
+[33mb8e53e8[m Create LICENSE
+[33m64b1347[m Update README.md
+[33mf6fcabb[m Update README.md
+[33m4abf7fa[m Create README.md
+[33m22810aa[m Desenvolvimento (#16)
+[33m38e6979[m feat: og meta data
+[33mc0ff5e5[m Initial Commit
+[33m16b1ae8[m Update README.md (#15)
+[33md2a605f[m Update README.md
+[33m574165a[m Initial Commit (#14)
+[33m2ca6bbe[m Initial Commit
+[33m2041089[m Site generico dasi 2024 (#9)
+[33mc18b5b3[m Update page.tsx (#10)
+[33ma7fe2cc[m Update page.tsx
+[33mb8c08a7[m fiz o header (#8)
+[33mf17cf41[m fiz o header
+[33m0d83d85[m Eu fiz a criação do componente "Header" e coloquei ele na pagina inic… (#7)
+[33m0f737ce[m Eu fiz a criação do componente "Header" e coloquei ele na pagina inicial do site "Page.tsx"
+[33me0da33e[m Update page.tsx (#6)
+[33m1511952[m Update page.tsx
+[33mafdd92d[m Criei o header na página "page.tsx" (#5)
+[33m4ba476b[m Criei o header na página "page.tsx"
+[33m07968fa[m Changes to be committed: (#4)
+[33m86de333[m Changes to be committed: 	modified:   src/app/page.tsx
+[33m38ce681[m Modifiquei a pagina page.tsx Changes to be committed: 	modified:   src/app/page.tsx
+[33m167bd81[m Update README.md
+[33m042facb[m setup do projeto 1.0
+[33m6552f83[m Update page.tsx
+[33mc1b273a[m configurando site 2
+[33mcff20eb[m configurações iniciais do projeto
+[33m19ebb78[m npm
+[33m61ca50c[m teste-miguel
+[33m706877c[m Update Index.cshtml
+[33m3588b32[m Commit (#3)
+[33m9890a68[m Commit
+[33md87b3c7[m Comitta (#2)
+[33maf9e52f[m Comitta
+[33medeb90f[m[33m ([m[1;33mtag: v.1.0[m[33m)[m Create dotnet.yml
+[33m45013c0[m Branch do Leandro (#1)
+[33mb8f835e[m Commit na minha branch
+[33mc111f90[m Primeiro Commit
+[33m6ad82da[m Adicionar arquivos de projeto.
+[33m7e31d20[m Adicione .gitattributes e .gitignore.
