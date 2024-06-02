@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React from "react";
 import styled from "styled-components";
 import Navigation from "./Navigation";
 
@@ -7,7 +7,6 @@ export default function Header() {
     return (
         <HeaderWrapper>
             <BackText>dasi</BackText>
-            <Navigation />
             <TitleBox>
                 <h2 className="mainTitle">Diretório Acadêmico</h2>
                 <h3 className="subtitle">Sistemas de Informação</h3>
@@ -21,25 +20,31 @@ const HeaderWrapper = styled.header `
     background-size: cover;
     color: #fff;
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    @media (min-width: 760px) { background: url(/images/header-desktop.png) center top / cover no-repeat; }
+    @media (min-width: 760px) { 
+        background: url(/images/header-desktop.png) center top / cover no-repeat; 
+    }
 `
 
-const BackText = styled.div `
-    position: fixed;
+const BackText = styled.div`
+    position: absolute;
     color: rgba(255, 255, 255, 0.05);
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
-    font-size: 30vw; /*37.5rem*/
+    font-size: 0rem; /*37.5rem*/
     font-weight: 700;
     letter-spacing: 2rem;
-    padding-left: 2rem;
 
     -webkit-user-select: none;  
     -moz-user-select: none;     
@@ -47,16 +52,22 @@ const BackText = styled.div `
     user-select: none; 
 
     @media (min-width: 760px) {
-        font-size: 35vw;
-        letter-spacing: 4rem;
-        padding-left: 2rem;
+        font-size: 20rem;
+    }
+
+    @media (min-width: 1100px) { 
+        font-size: 25rem; 
+    }
+
+    @media (min-width: 1440px){
+        font-size: 37.5rem;
     }
 `
 
 const TitleBox = styled.div `
     color: #d9d9d9;
-    min-height: 85%;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,15 +75,9 @@ const TitleBox = styled.div `
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
-    padding-bottom: 100px;
-
-    @media (min-width: 430px) { padding-bottom: 140px; }
-    @media (min-width: 530px) { padding-bottom: 80px; }
-    @media (min-width: 800px) { padding-bottom: 120px; }
-    @media (min-width: 1000px) { padding-bottom: 50px; }
 
     .mainTitle {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-family: "Montserrat", sans-serif;
         text-shadow: 0 4px 4px #6000FA;
         font-weight: 700;
@@ -82,11 +87,14 @@ const TitleBox = styled.div `
         @media (min-width: 580px) { font-size: 3rem; }
         @media (min-width: 890px) {
             font-size: 5.2rem;
-            text-shadow: 0px 7px 4px #6000FA;
-            letter-spacing: 0.5rem;
+            text-shadow: 0px 4px 4px #6000FA;
         }
-        @media (min-width: 1100px) { font-size: 5.4rem; }
-        @media (min-width: 1390px) { font-size: 6rem; }
+        @media (min-width: 1100px) { 
+            font-size: 4.5rem; 
+        }
+        @media (min-width: 1440px){
+            font-size: 7rem;
+        }
     }
     .subtitle {
         font-family: "Roboto", sans-serif;
