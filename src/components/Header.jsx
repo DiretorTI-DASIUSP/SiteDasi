@@ -1,119 +1,129 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "./Navbar";
+import Navigation from "./Navigation";
 
-function Header() {
+export default function Header() {
+
     return (
-        <Head>
-            <h1>DASI</h1>
-            <Container>
-                <Navbar />
-                <BoxTitulo>
-                    <h2 className="tituloPrincipal">Diretório Acadêmico</h2>
-                    <h3 className="subtitulo">Sistemas de Informação</h3>
-                </BoxTitulo>
-            </Container>
-            
-        </Head>
+        <HeaderWrapper>
+            <BackText>dasi</BackText>
+            <TitleBox>
+                <h2 className="mainTitle">Diretório Acadêmico</h2>
+                <h3 className="subtitle">Sistemas de Informação</h3>
+            </TitleBox>
+        </HeaderWrapper>
     )
 }
 
-
-const Head = styled.header`
-
-    background: url(/images/header-background.png) no-repeat;
+const HeaderWrapper = styled.header `
+    background: url(/images/header-mobile.png) center no-repeat;
     background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
-    height: 100vh;
     color: #fff;
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
-    position: relative;
-    h1 {
-        height: 100%;
-        font-family: "Oswald", sans-serif;
-        text-align: center;
-        color: #ffffff0d;
-        font-size: 37.5em; /*600px*/
-        letter-spacing: 0.12em;
-        position: absolute;
-        left: 52%;
-        transform: translate(-50%, 0);
-    }
-    @media (max-width: 760px) {
-        h1 { display: none; }
+    justify-content: center;
+
+    @media (min-width: 760px) { 
+        background: url(/images/header-desktop.png) center top / cover no-repeat; 
     }
 `
-const Container = styled.section`
-    width: 80vw;
-    height: 65vh;
+
+const BackText = styled.div`
+    position: absolute;
+    color: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content:  space-between;
-    text-align: center;
-    padding-top: 0px; 
-    z-index: 1;
-    @media (max-width: 1050px) {
-        width: 90vw;
-    }
-    @media (max-width: 760px) {
-        width: 100vw;
-    }
-    @media (max-width: 475px) {
-        height: 60vh;
-    }
-`
-const BoxTitulo = styled.div`
-    margin-top: 1.25em;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 0rem; /*37.5rem*/
+    font-weight: 700;
+    letter-spacing: 2rem;
 
-    .tituloPrincipal {
-        color: #d9d9d9;
-        font-family: "Montserrat", sans-serif;
-        letter-spacing: 10%;
-        font-size: 6em; 
-        line-height: 120%;
-        text-shadow: 0 7px 4px #6000FA;
+    -webkit-user-select: none;  
+    -moz-user-select: none;     
+    -ms-user-select: none;    
+    user-select: none; 
+
+    @media (min-width: 760px) {
+        font-size: 20rem;
     }
-    .subtitulo {
-        font-family: "Roboto", sans-serif;
-        font-size: 4em; /*64px*/
-        margin-top: 10px;
-        width: 100%;
-        line-height: 120%;
-        padding-bottom: -80px;
-        position: relative;
-        text-align: center;
-        z-index: 1;
+
+    @media (min-width: 1100px) { 
+        font-size: 25rem; 
     }
-    .subtitulo::after {
-        content: '';
-        position: absolute;
-        bottom: 0.015em; 
-        left: 50%;
-        transform: translateX(-50%);
-        width: 14em;
-        height: 29px; 
-        background: #6000facc;
-        z-index: -1;
-    }
-    @media (max-width: 931px) {
-        .subtitulo::after { width: 10em }
-    }
-    @media (max-width: 760px) {
-        font-size: 12px;
-        .subtitulo::after { width: 13em }
-    }
-    @media (max-width: 475px) {
-        font-size: 7.5px;
-        .subtitulo::after { width: 95%; height: 19px;}
-    }
-    @media (max-width: 390px) {
-        .subtitulo::after { width: 7.5em;}
+
+    @media (min-width: 1440px){
+        font-size: 37.5rem;
     }
 `
-export default Header;
+
+const TitleBox = styled.div `
+    color: #d9d9d9;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: start;*/
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    .mainTitle {
+        font-size: 2rem;
+        font-family: "Montserrat", sans-serif;
+        text-shadow: 0 4px 4px #6000FA;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0.25rem;
+
+        @media (min-width: 580px) { font-size: 3rem; }
+        @media (min-width: 890px) {
+            font-size: 5.2rem;
+            text-shadow: 0px 4px 4px #6000FA;
+        }
+        @media (min-width: 1100px) { 
+            font-size: 4.5rem; 
+        }
+        @media (min-width: 1440px){
+            font-size: 7rem;
+        }
+    }
+    .subtitle {
+        font-family: "Roboto", sans-serif;
+        font-size: 2rem;
+        line-height: 120%;
+        letter-spacing: 0.1rem;
+        margin-top: 0.4rem;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0.015em; 
+            left: 50%;
+            top: 85%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            height: 19px;
+            background-color: #6000facc;
+            z-index: -1;
+        }
+
+        @media (min-width: 455px) { &::after { width: 103%; } }
+        @media (min-width: 890px) {
+            font-size: 3.4rem;
+            &::after { height: 29px; letter-spacing: 0.2rem; }
+        }
+        @media (min-width: 1100px) { font-size: 4rem; }
+    }
+`
