@@ -71,6 +71,7 @@ const TextBox = styled.div`
         @media(min-width: 1270px) { font-size: 4rem; }
     }
     p {
+        text-align: justify;
         color: #D9D9D9;
         font-size: 1.5rem;
         font-weight: 300;
