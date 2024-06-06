@@ -33,7 +33,6 @@ const Props = {
 }
 const flex = css`
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 `
@@ -51,43 +50,32 @@ const Container = styled.section`
         width: 100%;
         flex-direction: row-reverse;
         margin: 10rem auto;
-        padding: 0 1rem; 
+        padding: 0 1rem;
     }
-    @media(min-width: 1270px) {
-        padding: 0 4rem; 
-    }
+    @media(min-width: 1270px) { padding: 0 4rem; }
 `
 const TextBox = styled.div`
     ${flex};
     text-align: center;
+    @media(min-width: 1023px) { 
+        text-align: start;
+        width: 70%;
+        padding: 2rem 0 2rem 5rem;
+    }
     h1 {
         font-size: 2rem;
         font-weight: 400;
-        padding-bottom: 2.69rem;
+        margin-bottom: 2.69rem;
         width: 100%;
-        @media(min-width: 760px) {
-            font-size: 3rem; 
-        }
-        @media(min-width: 1023px) { 
-            align-items: flex-start;
-        }
-        @media(min-width: 1270px) { 
-            font-size: 4rem;
-        }
+        @media(min-width: 760px) { font-size: 3rem; }
+        @media(min-width: 1270px) { font-size: 4rem; }
     }
     p {
         color: #D9D9D9;
         font-size: 1.5rem;
         font-weight: 300;
-        padding-bottom: 2rem;
-        @media(min-width: 1270px) { 
-            font-size: 1.7rem;
-        }
-    }
-    @media(min-width: 1023px) { 
-        text-align: start;
-        width: 70%;
-        padding: 2rem 0 2rem 5rem;
+        margin-bottom: 2rem;
+        @media(min-width: 1270px) { font-size: 1.7rem; }
     }
 `
 const ImageBox = styled.div`
