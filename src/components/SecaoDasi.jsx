@@ -9,26 +9,29 @@ export default function App() {
     )
 }
 function SecaoDasi({img, titulo, texto}) {
-    const partesTitulo = titulo.split('DASI');
     return (
         <Container>
             <TextBox>
                 <h1>
-                    {partesTitulo[0]}
-                    <StyleDasi>DASI </StyleDasi>
-                    {partesTitulo[1]}
+                    {titulo.parte1}
+                    <StyleDasi>{titulo.parte2}</StyleDasi>
+                    {titulo.parte3}
                 </h1>
                 <p>{texto}</p>
             </TextBox>
             <ImageBox>
-                <img src={img} alt={titulo} />
+                <img src={img} alt={`${titulo.parte1}${titulo.parte2}${titulo.parte3}`} />
             </ImageBox>
         </Container>
     );
 }
 const Props = {
     img: '/images/dasi-brasao.png',
-    titulo: 'O que é o DASI?',
+    titulo: {
+        parte1: 'O que é o ',
+        parte2: 'DASI ',
+        parte3: '?'
+    },
     texto: 'O Diretório Acadêmico de Sistemas de Informação (DASI) é uma entidade acadêmica de cunho universitário que representa os alunos do curso de SI da EACH-USP. A entidade busca melhorar a qualidade de vida do aluno durante sua graduação. Organizamos treinos de diversos esportes, grupos de estudos, mini-cursos, palestras, festas, campeonatos universitários a nível nacional, tudo através dos esforços dos nossos próprios integrantes.'
 }
 const flex = css`
