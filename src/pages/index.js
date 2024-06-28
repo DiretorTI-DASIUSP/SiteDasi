@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 //import Exemplo from "@/components/Exemplo";
 import Header from "@/components/Header";
-
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +22,7 @@ export default function Home() {
       <main>
         {/* <Exemplo/> */}
         <Header />
+        <Footer />
       </main>
     </>
   );
