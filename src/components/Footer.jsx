@@ -55,7 +55,8 @@ const Title = styled.div`
   }
 
   hr {
-    width: 20%;
+    width: 30%;
+    height: .35em;
     background-color: white;
   }
 `
@@ -77,7 +78,13 @@ const Block = styled.div`
     }
 
     @media screen and (min-width: 768px){
-      align-items: center;
+      align-items: left;
+    }
+
+    @media screen and (min-width: 1024px){
+      p {
+        font-size: 1.6rem;
+      }
     }
 
 
@@ -95,17 +102,27 @@ const TextosFooter = styled.div`
 
     @media screen and (min-width: 1024px){
       flex-direction:row;
-      justify-content:space-evenly;      
+      justify-content: space-evenly;     
+      text-align: left;
+      padding: 5em 10em 10em;
     }        
 `;
 
 const Imagens = styled.div`
+
   display: flex;  
   /* Estilos relacionados a imagens, usei displayflex para organizar as 2 imagens. */
   flex-direction: row;
   gap: 2em;
+
   img {
     width: 2.5em;
+  }
+
+  @media screen and (min-width: 1024px){
+    img{
+      width: 3em;
+    }
   }
 `;
 
@@ -113,13 +130,20 @@ const Imagens = styled.div`
 const MsgDireitos = styled.div`
 
   p {
-    text-align: center;
-     
     /* Estilos relacionados a MsgDireitos, para melhor leitura/execução do código */
-    
-    font-size: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
+  }
+
+  @media screen and (min-width: 1024px){
+    position: absolute;
+    width: calc(100% - 10em); // 100% - padding horizontal
+    bottom: 2.5em;
+    p {
+      font-size: 1.6rem;
+    }
   }
 `;
