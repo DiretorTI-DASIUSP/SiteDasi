@@ -216,7 +216,7 @@ bottom: 4px;
 }
 
 @media screen and (min-width: 1024px){
-
+    
 bottom:10px;
 p{
 font-size:17px;
