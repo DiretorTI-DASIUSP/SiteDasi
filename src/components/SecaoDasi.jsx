@@ -1,39 +1,22 @@
 import React from "react";
 import styled, {css} from "styled-components";
 
-export default function App() {
-    return (
-        <>
-            <SecaoDasi {...Props}/>
-        </>
-    )
-}
-function SecaoDasi({img, titulo, texto}) {
+export default function SecaoDasi() {
     return (
         <Container>
             <TextBox>
                 <h1>
-                    {titulo.parte1}
-                    <StyleDasi>{titulo.parte2}</StyleDasi>
-                    {titulo.parte3}
+                    O que é o <StyleDasi> DASI </StyleDasi>?
                 </h1>
-                <p>{texto}</p>
+                <p>O Diretório Acadêmico de Sistemas de Informação (DASI) é uma entidade acadêmica de cunho universitário que representa os alunos do curso de SI da EACH-USP. A entidade busca melhorar a qualidade de vida do aluno durante sua graduação. Organizamos treinos de diversos esportes, grupos de estudos, mini-cursos, palestras, festas, campeonatos universitários a nível nacional, tudo através dos esforços dos nossos próprios integrantes.</p>
             </TextBox>
             <ImageBox>
-                <img src={img} alt={`${titulo.parte1}${titulo.parte2}${titulo.parte3}`} />
+                <img src='/images/dasi-brasao.png' alt={"Brasão do DASI"} />
             </ImageBox>
         </Container>
     );
 }
-const Props = {
-    img: '/images/dasi-brasao.png',
-    titulo: {
-        parte1: 'O que é o ',
-        parte2: 'DASI ',
-        parte3: '?'
-    },
-    texto: 'O Diretório Acadêmico de Sistemas de Informação (DASI) é uma entidade acadêmica de cunho universitário que representa os alunos do curso de SI da EACH-USP. A entidade busca melhorar a qualidade de vida do aluno durante sua graduação. Organizamos treinos de diversos esportes, grupos de estudos, mini-cursos, palestras, festas, campeonatos universitários a nível nacional, tudo através dos esforços dos nossos próprios integrantes.'
-}
+
 const flex = css`
     display: flex;
     align-items: center;
