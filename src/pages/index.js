@@ -3,7 +3,7 @@ import Image from "next/image";
 //import Exemplo from "@/components/Exemplo";
 import Header from "@/components/Header";
 import SecaoDasi from "@/components/SecaoDasi";
-
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -26,6 +26,7 @@ export default function Home() {
         {/* <Exemplo/> */}
         <Header />
         <SecaoDasi />
+        <Footer />
       </main>
     </>
   );
