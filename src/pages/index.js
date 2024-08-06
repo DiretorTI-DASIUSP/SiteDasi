@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 //import Exemplo from "@/components/Exemplo";
 import Header from "@/components/Header";
+import SecaoDasi from "@/components/SecaoDasi";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -17,11 +18,14 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+
 
       </Head>
       <main>
         {/* <Exemplo/> */}
         <Header />
+        <SecaoDasi />
         <Footer />
       </main>
     </>
