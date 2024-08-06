@@ -46,31 +46,33 @@ const TextBox = styled.div`
     @media(min-width: 1023px) { 
         text-align: start;
         width: 70%;
-        padding: 2rem 0 2rem 5rem;
+        padding: 2rem;
     }
     h1 {
         font-size: 2rem;
         font-weight: 400;
-        margin-bottom: 2.69rem;
+        margin-bottom: 2rem;
         width: 100%;
         @media(min-width: 760px) { font-size: 3rem; }
-        @media(min-width: 1270px) { font-size: 4rem; }
+        @media(min-width: 1270px) { font-size: 3rem; }
     }
     p {
         text-align: justify;
         color: #D9D9D9;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 300;
         margin-bottom: 2rem;
-        @media(min-width: 1270px) { font-size: 1.7rem; }
+        line-height: 1.5em;
+        @media(min-width: 1270px) { font-size: 1.4rem; }
     }
 `
 const ImageBox = styled.div`
     text-align: center;
     img {
-        max-width: 57.64%;
+        max-width: 70%;
+
         @media(min-width: 1023px) { 
-            max-width: 100%;
+            max-width: 75%;
         }
     }
 `
