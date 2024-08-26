@@ -126,4 +126,6 @@ const TitleBox = styled.div `
         }
         @media (min-width: 1100px) { font-size: 4rem; }
     }
+
+    
 `

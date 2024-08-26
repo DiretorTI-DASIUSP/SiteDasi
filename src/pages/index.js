@@ -3,13 +3,14 @@ import Image from "next/image";
 //import Exemplo from "@/components/Exemplo";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CardInfo from "@/components/CardInfo";
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>DASI</title>
-        <meta name="description" content="Website do Diretório Acadêmico de Sistemas de Informação"/>
+        <meta name="description" content="Website do Diretório Acadêmico de Sistemas de Informação" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 
@@ -21,8 +22,11 @@ export default function Home() {
       </Head>
       <main>
         {/* <Exemplo/> */}
-        <Header />
-        <Footer />
+        
+       <Header></Header>
+       <Footer></Footer>
+       <CardInfo/>
+     
       </main>
     </>
   );
