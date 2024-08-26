@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import SecaoDasi from "@/components/SecaoDasi";
 import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       </Head>
       <main>
         {/* <Exemplo/> */}
+        <Navigation />
         <Header />
         <SecaoDasi />
         <Footer />
