@@ -125,5 +125,5 @@ const TitleBox = styled.div `
             &::after { height: 29px; letter-spacing: 0.2rem; }
         }
         @media (min-width: 1100px) { font-size: 4rem; }
-    }    
+    }
 `
