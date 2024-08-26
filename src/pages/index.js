@@ -23,9 +23,9 @@ export default function Home() {
       <main>
         {/* <Exemplo/> */}
         
-       <Header></Header>
-       <Footer></Footer>
-       <CardInfo/>
+       <Header />
+       <Footer />
+       <CardInfo />
      
       </main>
     </>
