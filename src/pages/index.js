@@ -4,6 +4,8 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import SecaoDasi from "@/components/SecaoDasi";
 import Footer from "@/components/Footer";
+import SecaoSetores from "@/components/SecaoSetores/SecaoSetores";
+import CardSetores from "@/components/CardSetores/CardSetores";
 
 export default function Home() {
   return (
@@ -26,6 +28,8 @@ export default function Home() {
         {/* <Exemplo/> */}
         <Header />
         <SecaoDasi />
+        <SecaoSetores/>
+        <CardSetores/>
         <Footer />
       </main>
     </>
