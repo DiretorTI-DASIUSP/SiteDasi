@@ -7,11 +7,18 @@ function Navigation() {
     function toggleMenu() {
         setIsMenuOpen(!isMenuOpen);
     }
-    function clickLink(e) {
+    function clickLink(e, id) {
         e.preventDefault();
+        const sec = document.getElementById(id);
         setTimeout(() => {
             setIsMenuOpen(false);
-        }, 400);
+        }, 200);
+        setTimeout(() => {
+            if(sec) {
+            sec.scrollIntoView({ behavior: 'smooth', block: 'center'});
+            }
+        }, 300);
+        
     }
 
     return (
@@ -33,7 +40,7 @@ function Navigation() {
                 </div>
                 <ul>
                     <li>
-                        <a href="#dasi" onClick={clickLink}>DASI</a>
+                        <a href="#oqueedasi" onClick={(e) => clickLink(e, 'oqueedasi')}>DASI</a>
                     </li>
                     <li>
                         <a href="#setores" onClick={clickLink}>Setores</a>
@@ -82,16 +89,16 @@ const Navbar = styled.nav`
         background-color: #181818;
         position: fixed;
         top: 0;
-        left: -100%; 
+        right: -100%; 
         z-index: 10000;
-        transition: left cubic-bezier(.5,0,0,.6) .3s;
+        transition: right cubic-bezier(.5,0,0,.6) .3s;
 
         &.open {
-            left: 0; 
+            right: 0; 
         }
 
         div {
-            margin: 13% 0 0 70%;
+            margin: 13% 70% 0 0;
             cursor: pointer;
         }
 
@@ -149,12 +156,12 @@ const Navbar = styled.nav`
 
     @media(min-width: 760px) {
         .icon-box {
-            img { width: 80px; }
+            img { width: 90px; }
         }
 
         .menu {
             width: 50vw;
-            left: -50vw;
+            right: -50vw;
             ul {
                 padding-top: 4em;
             }
@@ -181,14 +188,12 @@ const Navbar = styled.nav`
 
                 li {
                     margin-top: 0;
-                    font-size: 1.2em;
                 }
             }
         }
 
         .doIt {
             display: block;
-            font-size: 1em; 
             transition: .2s;
 
             &:hover {
