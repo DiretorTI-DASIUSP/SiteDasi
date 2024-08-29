@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>DASI</title>
-        <meta name="description" content="Website do Diretório Acadêmico de Sistemas de Informação"/>
+        <meta name="description" content="Website do Diretório Acadêmico de Sistemas de Informação" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 
@@ -28,8 +28,7 @@ export default function Home() {
         {/* <Exemplo/> */}
         <Header />
         <SecaoDasi />
-        <SecaoSetores/>
-        <CardSetores/>
+        <SecaoSetores />
         <Footer />
       </main>
     </>

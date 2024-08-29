@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import CardSetores from '../CardSetores/CardSetores';
+import React from "react";
+import styled from "styled-components";
+import CardSetores from "../CardSetores/CardSetores";
 
 export default function SecaoSetores() {
   return (
@@ -8,25 +8,57 @@ export default function SecaoSetores() {
       <Background>
         <ContainerMainTitle>
           <MainTitle>
-            <h1>CONHEÇA NOSSOS <span>SETORES</span></h1>
+            <h1>
+              CONHEÇA NOSSOS <span>SETORES</span>
+            </h1>
           </MainTitle>
         </ContainerMainTitle>
 
         <ContainerSubTitle>
           <SubTitle>
-            <h2>No <span>DASI</span> você vai encontrar o setor que mais combina com você!</h2>
+            <h2>
+              No <span>DASI</span> você vai encontrar o setor que mais combina
+              com você!
+            </h2>
           </SubTitle>
         </ContainerSubTitle>
 
         <CardsWrapper>
-          <CardSetores foto="img_academico" titulo="Acadêmico" texto="Lorem ipsum is simply dummy text of the printing and typesetti..." />
-          <CardSetores foto="img_ti" titulo="TI" texto="Lorem ipsum is simply dummy text of the printing and typesetti..." />
-          <CardSetores foto="img_eventos" titulo="Eventos" texto="Lorem ipsum is simply dummy text of the printing and typesetti..." />
-          <CardSetores foto="img_esportivo" titulo="Esportivo" texto="Lorem ipsum is simply dummy text of the printing and typesetti..." />
-          <CardSetores foto="img_gestao" titulo="Gestão de Pessoas" texto="Lorem ipsum is simply dummy text of the printing and typesetti..." />
-          <CardSetores foto="img_administração" titulo="Administração" texto="Lorem ipsum is simply dummy text of the printing and typesetti..." />
-          <CardSetores foto="img_patrimonio" titulo="Patrimônio" texto="Lorem ipsum is simply dummy text of the printing and typesetti..." />
-          
+          <CardSetores
+            foto="/images/academico.png"
+            titulo="Acadêmico"
+            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+          />
+          <CardSetores
+            foto="/images/ti.png"
+            titulo="TI"
+            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+          />
+          <CardSetores
+            foto="/images/eventos.png"
+            titulo="Eventos"
+            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+          />
+          <CardSetores
+            foto="/images/esportivo.png"
+            titulo="Esportivo"
+            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+          />
+          <CardSetores
+            foto="/images/gp.png"
+            titulo="Gestão de Pessoas"
+            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+          />
+          <CardSetores
+            foto="/images/adm.png"
+            titulo="Administração"
+            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+          />
+          <CardSetores
+            foto="/images/patrimonio.png"
+            titulo="Patrimônio"
+            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+          />
         </CardsWrapper>
       </Background>
     </Container>
@@ -72,25 +104,29 @@ const MainTitle = styled.div`
   }
 
   @media (max-width: 1200px) {
-    h1, span {
+    h1,
+    span {
       font-size: 2.5rem;
     }
   }
 
   @media (max-width: 992px) {
-    h1, span {
+    h1,
+    span {
       font-size: 2rem;
     }
   }
 
   @media (max-width: 768px) {
-    h1, span {
+    h1,
+    span {
       font-size: 1.75rem;
     }
   }
 
   @media (max-width: 576px) {
-    h1, span {
+    h1,
+    span {
       font-size: 1.5rem;
     }
   }
@@ -98,7 +134,7 @@ const MainTitle = styled.div`
 
 const SubTitle = styled.div`
   h2 {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-size: 1.8rem;
     font-weight: 100;
     line-height: 43.88px;
@@ -115,19 +151,22 @@ const SubTitle = styled.div`
   }
 
   @media (max-width: 1200px) {
-    h2, span {
+    h2,
+    span {
       font-size: 1.5rem;
     }
   }
 
   @media (max-width: 768px) {
-    h2, span {
-      font-size: 1.156rem;;
+    h2,
+    span {
+      font-size: 1.156rem;
     }
   }
 
   @media (max-width: 576px) {
-    h2, span {
+    h2,
+    span {
       font-size: 1.2rem;
     }
   }
