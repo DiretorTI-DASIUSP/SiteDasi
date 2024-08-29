@@ -10,7 +10,9 @@ export default function CardSetores({ foto, titulo, texto }) {
       <Title>
         <h1>{titulo}</h1>
       </Title>
-      <Divider />
+      <Divider>
+        <div className="divider" />
+      </Divider>
       <Text>
         <p>{texto}</p>
       </Text>
@@ -26,6 +28,7 @@ const CardsContainer = styled.section`
   display: flex;
   text-align: center;
   background: #181818;
+  border-bottom: 3px solid #fff;
   color: white;
   margin: 15px;
   transition: transform 0.3s ease-in-out;
@@ -34,6 +37,10 @@ const CardsContainer = styled.section`
 
   &:hover {
     transform: scale(1.05);
+
+    .divider {
+      background-color: #fff !important;
+    }
   }
 `;
 
@@ -58,15 +65,22 @@ const Title = styled.div`
 `;
 
 const Divider = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px 0;
-  border: none;
-  border-top: 1px solid #ffffff30;
+
+  div {
+    width: 80%;
+    height: 1px;
+    background-color: #fff !important;
+  }
 `;
 
 const Text = styled.div`
   p {
     font-family: Montserrat;
     font-size: 14px;
-    color: #aaa;
-  }
+    color: #aaa;
+  }
 `;
