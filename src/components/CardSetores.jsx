@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 export default function CardSetores({ foto, titulo, texto }) {
   return (
@@ -19,18 +19,18 @@ export default function CardSetores({ foto, titulo, texto }) {
 }
 
 const CardsContainer = styled.section`
-    width: 250px;
-    height: 230px;
-    border-radius: 4px;
-    padding: 20px;
-    display: flex;
-    text-align: center;
-    background: #181818;
-    color: white;
-    margin: 15px;
-    transition: transform 0.3s ease-in-out;
-    flex-direction: column;
-    justify-content: center;
+  width: 250px;
+  height: 230px;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  background: #181818;
+  color: white;
+  margin: 15px;
+  transition: transform 0.3s ease-in-out;
+  flex-direction: column;
+  justify-content: center;
 
   &:hover {
     transform: scale(1.05);
@@ -48,6 +48,9 @@ const Image = styled.div`
 
 const Title = styled.div`
   h1 {
+    font-family: Montserrat;
+    text-shadow: 0 4px 4px #6000fa;
+
     font-size: 20px;
     font-weight: 600;
     margin: 10px 0;
@@ -62,6 +65,7 @@ const Divider = styled.div`
 
 const Text = styled.div`
   p {
+    font-family: Montserrat;
     font-size: 14px;
     color: #aaa;
   }

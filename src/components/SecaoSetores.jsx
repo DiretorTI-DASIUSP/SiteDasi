@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import CardSetores from "../CardSetores/CardSetores";
+import CardSetores from "./CardSetores";
 
 export default function SecaoSetores() {
   return (
