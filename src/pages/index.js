@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import SecaoDasi from "@/components/SecaoDasi";
 import Footer from "@/components/Footer";
 import SecaoSetores from "@/components/SecaoSetores";
+import CardInfo from "@/components/CardInfo";
+import Navigation from "@/components/Navigation";
 
 export default function Home() {
   return (
@@ -25,9 +27,11 @@ export default function Home() {
       </Head>
       <main>
         {/* <Exemplo/> */}
+        <Navigation />
         <Header />
         <SecaoDasi />
         <SecaoSetores />
+        <CardInfo />
         <Footer />
       </main>
     </>
