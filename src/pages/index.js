@@ -1,12 +1,13 @@
+//import Exemplo from "@/components/Exemplo";
 import Head from "next/head";
 import Image from "next/image";
-//import Exemplo from "@/components/Exemplo";
 import Header from "@/components/Header";
 import SecaoDasi from "@/components/SecaoDasi";
 import Footer from "@/components/Footer";
 import SecaoSetores from "@/components/SecaoSetores";
 import CardInfo from "@/components/CardInfo";
 import Navigation from "@/components/Navigation";
+import SecaoDepoimentos from "@/components/SecaoDepoimentos";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         <SecaoDasi />
         <SecaoSetores />
         <CardInfo />
+        <SecaoDepoimentos />
         <Footer />
       </main>
     </>

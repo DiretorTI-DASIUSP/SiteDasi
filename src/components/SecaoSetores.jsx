@@ -51,7 +51,7 @@ export default function SecaoSetores() {
           />
           <CardSetores
             foto="/images/adm.png"
-            titulo="Administração"
+            titulo="Criação"
             texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
           />
           <CardSetores
