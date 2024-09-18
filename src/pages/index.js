@@ -31,7 +31,7 @@ export default function Home() {
         <Navigation />
         <Header />
         <SecaoDasi />
-        <SecaoSetores />
+        <SecaoSetores  />
         <CardInfo />
         <SecaoDepoimentos />
         <Footer />

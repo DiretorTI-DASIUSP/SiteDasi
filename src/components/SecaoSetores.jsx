@@ -4,7 +4,7 @@ import CardSetores from "./CardSetores";
 
 export default function SecaoSetores() {
   return (
-    <Container>
+    <Container id="setores">
       <Background>
         <ContainerMainTitle>
           <MainTitle>
