@@ -4,7 +4,7 @@ import CardSetores from "./CardSetores";
 
 export default function SecaoSetores() {
   return (
-    <Container>
+    <Container id="setores">
       <Background>
         <ContainerMainTitle>
           <MainTitle>
@@ -51,7 +51,7 @@ export default function SecaoSetores() {
           />
           <CardSetores
             foto="/images/adm.png"
-            titulo="Administração"
+            titulo="Criação"
             texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
           />
           <CardSetores

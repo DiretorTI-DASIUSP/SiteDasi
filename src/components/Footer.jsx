@@ -17,8 +17,8 @@ export default function Footer() {
 
       {/* Criei a div Block(blocos), para aplicar facilmente o displayflex, para a responsividade,                                                    separei os títulos pela div Title para além de poupar código, separar o 
       título e o hr do paragrafo abaixo de forma simples, de forma que o hr e o h1,h2 se torne "1"  */}
-     
-     <Block>
+
+      <Block>
         <Title>
           <h1>Termos</h1>
           <hr></hr>
@@ -33,8 +33,10 @@ export default function Footer() {
         </Title>
 
         <Imagens>
-          <img src="/images/logotipo-do-instagram.png" />
-          <img src="/images/logotipo-do-linkedin.png" />
+          <a href="https://linktr.ee/dasiusp" target="_blank">
+            <img src="/images/logotipo-do-instagram.png" />
+          </a>
+          {/* <img src="/images/logotipo-do-linkedin.png" /> */}
         </Imagens>
       </Block>
 
@@ -56,61 +58,56 @@ const Title = styled.div`
 
   hr {
     width: 30%;
-    height: .35em;
+    height: 0.35em;
     background-color: white;
   }
-`
+`;
 
 //Aqui na "div" Block, vou separar o código entre essas block's para poder fazer o displayflex facilmente.
 //Também possui o media screen para 768px para centralizar os blocks.
 
 const Block = styled.div`
+  display: flex;
+  flex-direction: column;
 
-    display: flex; 
-    flex-direction:column; 
-    
-    gap: 1.5em;
+  gap: 1.5em;
 
-    p{
+  p {
     font-size: 1.4rem;
     color: white;
-    font-family: "Montserrat", sans-serif; 
+    font-family: "Montserrat", sans-serif;
+  }
+
+  @media screen and (min-width: 768px) {
+    align-items: left;
+  }
+
+  @media screen and (min-width: 1024px) {
+    p {
+      font-size: 1.6rem;
     }
-
-    @media screen and (min-width: 768px){
-      align-items: left;
-    }
-
-    @media screen and (min-width: 1024px){
-      p {
-        font-size: 1.6rem;
-      }
-    }
-
-
-`
+  }
+`;
 //No TextosFooter eu fiz toda a estilização geral dessa página, mudando a altura nas resoluções etc.
 const TextosFooter = styled.div`
+  width: 100%;
+  padding: 4em 2em;
+  background-color: #5600c5;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
 
-    width: 100%;
-    padding: 4em 2em;                                     
-    background-color: #5600C5;
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    gap: 4em;
-
-    @media screen and (min-width: 1024px){
-      flex-direction:row;
-      justify-content: space-evenly;     
-      text-align: left;
-      padding: 5em 10em 10em;
-    }        
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
+    padding: 5em 10em 10em;
+  }
 `;
 
 const Imagens = styled.div`
-
-  display: flex;  
+  display: flex;
   /* Estilos relacionados a imagens, usei displayflex para organizar as 2 imagens. */
   flex-direction: row;
   gap: 2em;
@@ -119,8 +116,8 @@ const Imagens = styled.div`
     width: 2.5em;
   }
 
-  @media screen and (min-width: 1024px){
-    img{
+  @media screen and (min-width: 1024px) {
+    img {
       width: 3em;
     }
   }
@@ -128,7 +125,6 @@ const Imagens = styled.div`
 
 //Aqui estilizei a mensagem de direitos, organizando seu tamanho e posição nas diferentes resoluções.
 const MsgDireitos = styled.div`
-
   p {
     /* Estilos relacionados a MsgDireitos, para melhor leitura/execução do código */
     text-align: center;
@@ -138,7 +134,7 @@ const MsgDireitos = styled.div`
     font-weight: 300;
   }
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     position: absolute;
     width: calc(100% - 10em); // 100% - padding horizontal
     bottom: 2.5em;

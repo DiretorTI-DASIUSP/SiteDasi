@@ -12,6 +12,7 @@
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-multi-carousel": "^2.8.5",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {
