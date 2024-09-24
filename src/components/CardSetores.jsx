@@ -21,8 +21,7 @@ export default function CardSetores({ foto, titulo, texto }) {
 }
 
 const CardsContainer = styled.section`
-  width: 250px;
-  height: 230px;
+  width: 300px;
   border-radius: 4px;
   padding: 20px;
   display: flex;
@@ -82,5 +81,8 @@ const Text = styled.div`
     font-family: Montserrat;
     font-size: 14px;
     color: #aaa;
+    text-align: justify;
+    padding: 0 2em;
+    position: relative;
   }
 `;
