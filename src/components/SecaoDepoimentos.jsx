@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import CardSetores from "./CardSetores";
+import DepoimentoCard from "./DepoimentoCard";
 export default function SecaoDepoimentos() {
   const responsive = {
     superLargeDesktop: {
@@ -49,24 +50,24 @@ export default function SecaoDepoimentos() {
         infinite={true}
       >
         <div>
-          <CardSetores
-            foto="/images/academico.png"
-            titulo="Acadêmico"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+          <DepoimentoCard
+            nome="Miguel Silva"
+            foto="/images/membros/ti/miguel.jpg"
+            depoimento="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
           />
         </div>
         <div>
-          <CardSetores
-            foto="/images/academico.png"
-            titulo="Acadêmico"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+          <DepoimentoCard
+            nome="Miguel Silva"
+            foto="/images/membros/ti/miguel.jpg"
+            depoimento="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
           />
         </div>
         <div>
-          <CardSetores
-            foto="/images/academico.png"
-            titulo="Acadêmico"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+          <DepoimentoCard
+            nome="Miguel Silva"
+            foto="/images/membros/ti/miguel.jpg"
+            depoimento="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
           />
         </div>
       </Carousel>
