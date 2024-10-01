@@ -1,9 +1,13 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import CardSetores from "./CardSetores";
 import DepoimentoCard from "./DepoimentoCard";
+import DepoimentoTi from "../depoimentos/ti.json";
+import DepoimentoAcademico from "../depoimentos/academico.json";
+import BtnPrimary from "./Btn/BtnPrimary";
+
 export default function SecaoDepoimentos() {
   const responsive = {
     superLargeDesktop: {
@@ -23,6 +27,37 @@ export default function SecaoDepoimentos() {
       items: 1,
     },
   };
+
+  const [categoria, setCategoria] = useState("ti");
+  const [depoimentos, setDepoimentos] = useState(DepoimentoTi);
+
+  useEffect(() => {
+    switch (categoria) {
+      case "ti":
+        setDepoimentos(DepoimentoTi);
+        break;
+      case "academico":
+        setDepoimentos(DepoimentoAcademico);
+        break;
+      case "eventos":
+        setDepoimentos(DepoimentoEventos);
+        break;
+      case "esportivo":
+        setDepoimentos(DepoimentoEsportivo);
+        break;
+      case "gp":
+        setDepoimentos(DepoimentoGp);
+        break;
+      case "adm":
+        setDepoimentos(DepoimentoAdm);
+        break;
+      case "patrimonio":
+        setDepoimentos(DepoimentoPatrimonio);
+        break;
+      default:
+        setDepoimentos(DepoimentoTi);
+    }
+  }, [categoria]);
 
   return (
     <Container id="depoimentos">
@@ -49,37 +84,53 @@ export default function SecaoDepoimentos() {
         autoPlaySpeed={3000}
         infinite={true}
       >
-        <div>
-          <DepoimentoCard
-            nome="Miguel Silva"
-            foto="/images/membros/ti/miguel.jpg"
-            depoimento="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
-          />
-        </div>
-        <div>
-          <DepoimentoCard
-            nome="Miguel Silva"
-            foto="/images/membros/ti/miguel.jpg"
-            depoimento="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
-          />
-        </div>
-        <div>
-          <DepoimentoCard
-            nome="Miguel Silva"
-            foto="/images/membros/ti/miguel.jpg"
-            depoimento="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
-          />
-        </div>
+        {depoimentos?.map((depoimento) => (
+          <div key={depoimento.nome}>
+            <DepoimentoCard
+              nome={depoimento.nome}
+              foto={depoimento.foto}
+              depoimento={depoimento.depoimento}
+            />
+          </div>
+        ))}
       </Carousel>
       <ButtonsStack>
         <div>
-          <button className="doIt item">Acadêmico</button>
-          <button className="doIt item">TI</button>
-          <button className="doIt item">Eventos</button>
-          <button className="doIt item">Esportivo</button>
-          <button className="doIt item">Gestão de Pessoas</button>
-          <button className="doIt item">Administração</button>
-          <button className="doIt item">Patrimônio</button>
+          <BtnPrimary
+            texto="Acadêmico"
+            handleClick={() => setCategoria("academico")}
+            className="doIt item"
+          />
+          <BtnPrimary
+            texto="TI"
+            handleClick={() => setCategoria("ti")}
+            className="doIt item"
+          />
+          <BtnPrimary
+            texto="Eventos"
+            handleClick={() => setCategoria("eventos")}
+            className="doIt item"
+          />
+          <BtnPrimary
+            texto="Esportivo"
+            handleClick={() => setCategoria("esportivo")}
+            className="doIt item"
+          />
+          <BtnPrimary
+            texto="Gestão de Pessoas"
+            handleClick={() => setCategoria("gp")}
+            className="doIt item"
+          />
+          <BtnPrimary
+            texto="Administração"
+            handleClick={() => setCategoria("adm")}
+            className="doIt item"
+          />
+          <BtnPrimary
+            texto="Patrimônio"
+            handleClick={() => setCategoria("patrimonio")}
+            className="doIt item"
+          />
         </div>
       </ButtonsStack>
     </Container>
