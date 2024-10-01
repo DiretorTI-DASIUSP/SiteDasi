@@ -2,6 +2,22 @@ import React from "react";
 import styled from "styled-components";
 import CardSetores from "./CardSetores";
 
+const textos = {
+  academico:
+    "O setor acadêmico (carinhosamente apelidado de AcaDASI) é responsável por agregar na graduação dos alunos através de DASIConvidas (palestras com empresas e pessoas da área), DASIVisitas (visitas técnicas a escritórios de empresas tech) e a Semana de Estágio, nosso maior evento onde convidamos diversas empresas para palestrar sobre a carreira em tecnologia. E claro, todos esses com muitos coffee breaks!!! Também organizamos o projeto de extensão do DASI, o Grifocode, onde damos aulas de programação para alunos de escolas públicas!",
+  ti: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  eventos:
+    "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  esportivo:
+    "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  gp: "O setor de Gestão de Pessoas ajuda a manter o bem-estar de todos os membros do DASI. Criando atividades que fortalecem a nossa união e interação. Auxiliamos os membros que entram e que saem na sua nova jornada.",
+  adm: "O setor do DASI responsável por criar os produtos do curso e a comunicação visual em peças físicas e digitais. Utilizando de muita criatividade e colaboração dos membros com sugestões e elementos a serem implementados no produto ou peça de comunicação",
+  patrimonio:
+    "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  criacao:
+    "O setor responsável por criar os produtos do curso e a comunicação visual em peças físicas e digitais. Utilizando de muita criatividade e colaboração dos membros com sugestões e elementos a serem implementados no produto ou peça de comunicação",
+};
+
 export default function SecaoSetores() {
   return (
     <Container id="setores">
@@ -47,12 +63,12 @@ export default function SecaoSetores() {
           <CardSetores
             foto="/images/gp.png"
             titulo="Gestão de Pessoas"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+            texto={textos.gp}
           />
           <CardSetores
             foto="/images/adm.png"
             titulo="Criação"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+            texto={textos.criacao}
           />
           <CardSetores
             foto="/images/patrimonio.png"
