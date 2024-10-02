@@ -3,9 +3,10 @@ import styled from "styled-components";
 import CardSetores from "./CardSetores";
 
 const textos = {
+  // arrumar esse texto
   academico:
-    "O setor acadêmico (carinhosamente apelidado de AcaDASI) é responsável por agregar na graduação dos alunos através de DASIConvidas (palestras com empresas e pessoas da área), DASIVisitas (visitas técnicas a escritórios de empresas tech) e a Semana de Estágio, nosso maior evento onde convidamos diversas empresas para palestrar sobre a carreira em tecnologia. E claro, todos esses com muitos coffee breaks!!! Também organizamos o projeto de extensão do DASI, o Grifocode, onde damos aulas de programação para alunos de escolas públicas!",
-  ti: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "O setor acadêmico é responsável por agregar na graduação dos alunos através de palestras, visitas técnicas e a Semana de Estágio. E claro, todos esses com muitos coffee breaks! Também ajudamos a sociedade, dando aulas de programação para alunos de escolas públicas!",
+  ti: "O setor de T.I é o responsável pela criação de sites e bots para o Dasi, auxiliando e automatizando os fluxos de trabalho do Dasi. Além disso, o setor de T.I é responsável por manter a infraestrutura de servidores e sistemas do Dasi.",
   eventos:
     "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   esportivo:
@@ -43,22 +44,18 @@ export default function SecaoSetores() {
           <CardSetores
             foto="/images/academico.png"
             titulo="Acadêmico"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+            texto={textos.academico}
           />
-          <CardSetores
-            foto="/images/ti.png"
-            titulo="TI"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
-          />
+          <CardSetores foto="/images/ti.png" titulo="TI" texto={textos.ti} />
           <CardSetores
             foto="/images/eventos.png"
             titulo="Eventos"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+            texto={textos.eventos}
           />
           <CardSetores
             foto="/images/esportivo.png"
             titulo="Esportivo"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+            texto={textos.esportivo}
           />
           <CardSetores
             foto="/images/gp.png"
@@ -73,7 +70,7 @@ export default function SecaoSetores() {
           <CardSetores
             foto="/images/patrimonio.png"
             titulo="Patrimônio"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+            texto={textos.patrimonio}
           />
         </CardsWrapper>
       </Background>

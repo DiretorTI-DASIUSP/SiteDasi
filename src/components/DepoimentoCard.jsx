@@ -31,8 +31,8 @@ const Container = styled.section`
   }
 
   img {
-    width: 100px;
-    height: 100px;
+    width: 124px;
+    height: 124px;
     border-radius: 10%;
     margin-bottom: 10px;
   }

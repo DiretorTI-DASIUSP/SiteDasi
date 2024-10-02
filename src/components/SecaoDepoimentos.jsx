@@ -6,6 +6,11 @@ import "react-multi-carousel/lib/styles.css";
 import DepoimentoCard from "./DepoimentoCard";
 import DepoimentoTi from "../depoimentos/ti.json";
 import DepoimentoAcademico from "../depoimentos/academico.json";
+import DepoimentoEventos from "../depoimentos/eventos.json";
+import DepoimentoEsportivo from "../depoimentos/esportivo.json";
+import DepoimentoGp from "../depoimentos/gp.json";
+import DepoimentoAdm from "../depoimentos/adm.json";
+import DepoimentoPatrimonio from "../depoimentos/patrimonio.json";
 import BtnPrimary from "./Btn/BtnPrimary";
 
 export default function SecaoDepoimentos() {
