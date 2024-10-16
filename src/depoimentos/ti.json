@@ -2,14 +2,42 @@
   {
     "nome": "Miguel Silva",
     "foto": "/images/membros/ti/miguel.jpg",
-    "depoimento": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
-    "cargo": "Desenvolvedor",
+    "depoimento": "Participar do DASI foi uma das melhores experiências da minha graduação. Como Diretor de TI, aprendi lições valiosas, conheci pessoas incríveis e vivi momentos inesquecíveis. A jornada, cheia de desafios e aprendizados, fez cada passo valer a pena e contribuiu muito para o meu crescimento pessoal e profissional.",
+    "cargo": "Diretor de T.I",
     "setor": "TI"
   },
   {
     "nome": "Renan Gomes",
     "foto": "/images/membros/ti/renan.jpg",
     "depoimento": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc tincidunt ultricies.",
+    "cargo": "Diretor de T.I",
+    "setor": "TI"
+  },
+  {
+    "nome": "Eduardo",
+    "foto": "/images/membros/ti/eduardo.jpg",
+    "depoimento": "Eu entrei no DASI assim que entrei na USP, tinha percebido o quão magnífica era essa entidade desde o primeiro dia, o DASI tem setores pra todos os tipos!",
+    "cargo": "Diretor de T.I",
+    "setor": "TI"
+  },
+  {
+    "nome": "Gabriel Trigueiro",
+    "foto": "/images/membros/ti/trigueiro.jpg",
+    "depoimento": "Me juntei ao DASI logo quando ingressei na USP e foi uma experiência enriquecedora: como membro do setor de TI, aprendi novas tecnologias e ter a oportunidade de trabalhar em uma equipe. Recomendo a todos entrar no DASI, é uma oportunidade incrível!",
+    "cargo": "Diretor de T.I",
+    "setor": "TI"
+  },
+  {
+    "nome": "João Pascale",
+    "foto": "/images/membros/ti/pascale.jpg",
+    "depoimento": "No meu primeiro ano ingressei no DASI no setor de T.I e desde então venho aprendendo muito principalmente sobre desenvolvimento web, recomendo a todos que queiram aprender do zero com todo o apoio da equipe. Não tenham medo de se envolver, viva o DASI!",
+    "cargo": "Desenvolvedor",
+    "setor": "TI"
+  },
+  {
+    "nome": "Karina Yang",
+    "foto": "/images/membros/ti/karina.jpg",
+    "depoimento": "Durante o meu ano de calouro, ingressei no DASI, especificamente no setor de TI, onde tive a oportunidade de aprimorar meus conhecimentos em desenvolvimento web. Essa experiência não só ampliou minhas habilidades, mas também me proporcionou a chance de conhecer pessoas incríveis. Recomendo demais entrar no DASI!",
     "cargo": "Desenvolvedor",
     "setor": "TI"
   }
