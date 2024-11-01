@@ -24,11 +24,11 @@ export default function SecaoDepoimentos() {
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 671 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 670, min: 0 },
       items: 1,
     },
   };

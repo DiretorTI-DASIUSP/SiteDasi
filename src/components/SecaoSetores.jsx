@@ -8,9 +8,9 @@ const textos = {
     "O setor acadêmico é responsável por agregar na graduação dos alunos através de palestras, visitas técnicas e a Semana de Estágio. E claro, todos esses com muitos coffee breaks! Também ajudamos a sociedade, dando aulas de programação para alunos de escolas públicas!",
   ti: "O setor de T.I é o responsável pela criação de sites e bots para o Dasi, auxiliando e automatizando os fluxos de trabalho do Dasi. Além disso, o setor de T.I é responsável por manter a infraestrutura de servidores e sistemas do Dasi.",
   eventos:
-    "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "O setor de eventos da EACH organiza as festas mais icônicas do campus. No primeiro semestre, temos o PancaDasi com seu boom de óculos Juliet; no segundo, a Glow brilha com estética neon e Open Beats. Fazer parte dessa produção é criar momentos únicos e memoráveis!",
   esportivo:
-    "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "O setor esportivo é responsável por organizar eventos esportivos para os alunos do curso, como o intercomp e o interSI, e por gerir as equipes existentes. Dessa forma, incentivamos a prática de esportes e proporcionamos momentos de descontração entre os estudantes do curso",
   gp: "O setor de Gestão de Pessoas ajuda a manter o bem-estar de todos os membros do DASI. Criando atividades que fortalecem a nossa união e interação. Auxiliamos os membros que entram e que saem na sua nova jornada.",
   adm: "O setor do DASI responsável por criar os produtos do curso e a comunicação visual em peças físicas e digitais. Utilizando de muita criatividade e colaboração dos membros com sugestões e elementos a serem implementados no produto ou peça de comunicação",
   patrimonio:

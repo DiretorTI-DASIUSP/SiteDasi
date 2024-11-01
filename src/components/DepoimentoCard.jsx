@@ -21,8 +21,8 @@ const Container = styled.section`
   padding: 20px;
   margin: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  min-height: 350px; /* achar uma unidade de medida melhor */
-  max-height: 350px; /* achar uma unidade de medida melhor */
+  min-height: 320px; /* achar uma unidade de medida melhor */
+  max-height: 320px; /* achar uma unidade de medida melhor */
 
   .img-texto {
     display: flex;
