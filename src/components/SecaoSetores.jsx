@@ -2,6 +2,23 @@ import React from "react";
 import styled from "styled-components";
 import CardSetores from "./CardSetores";
 
+const textos = {
+  // arrumar esse texto
+  academico:
+    "O setor acadêmico é responsável por agregar na graduação dos alunos através de palestras, visitas técnicas e a Semana de Estágio. E claro, todos esses com muitos coffee breaks! Também ajudamos a sociedade, dando aulas de programação para alunos de escolas públicas!",
+  ti: "O setor de T.I é o responsável pela criação de sites e bots para o Dasi, auxiliando e automatizando os fluxos de trabalho do Dasi. Além disso, o setor de T.I é responsável por manter a infraestrutura de servidores e sistemas do Dasi.",
+  eventos:
+    "O setor de eventos da EACH organiza as festas mais icônicas do campus. No primeiro semestre, temos o PancaDasi com seu boom de óculos Juliet; no segundo, a Glow brilha com estética neon e Open Beats. Fazer parte dessa produção é criar momentos únicos e memoráveis!",
+  esportivo:
+    "O setor esportivo é responsável por organizar eventos esportivos para os alunos do curso, como o intercomp e o interSI, e por gerir as equipes existentes. Dessa forma, incentivamos a prática de esportes e proporcionamos momentos de descontração entre os estudantes do curso",
+  gp: "O setor de Gestão de Pessoas ajuda a manter o bem-estar de todos os membros do DASI. Criando atividades que fortalecem a nossa união e interação. Auxiliamos os membros que entram e que saem na sua nova jornada.",
+  adm: "O setor do DASI responsável por criar os produtos do curso e a comunicação visual em peças físicas e digitais. Utilizando de muita criatividade e colaboração dos membros com sugestões e elementos a serem implementados no produto ou peça de comunicação",
+  patrimonio:
+    "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  criacao:
+    "O setor responsável por criar os produtos do curso e a comunicação visual em peças físicas e digitais. Utilizando de muita criatividade e colaboração dos membros com sugestões e elementos a serem implementados no produto ou peça de comunicação",
+};
+
 export default function SecaoSetores() {
   return (
     <Container id="setores">
@@ -27,37 +44,33 @@ export default function SecaoSetores() {
           <CardSetores
             foto="/images/academico.png"
             titulo="Acadêmico"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+            texto={textos.academico}
           />
-          <CardSetores
-            foto="/images/ti.png"
-            titulo="TI"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
-          />
+          <CardSetores foto="/images/ti.png" titulo="TI" texto={textos.ti} />
           <CardSetores
             foto="/images/eventos.png"
             titulo="Eventos"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+            texto={textos.eventos}
           />
           <CardSetores
             foto="/images/esportivo.png"
             titulo="Esportivo"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+            texto={textos.esportivo}
           />
           <CardSetores
             foto="/images/gp.png"
             titulo="Gestão de Pessoas"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+            texto={textos.gp}
           />
           <CardSetores
             foto="/images/adm.png"
             titulo="Criação"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+            texto={textos.criacao}
           />
           <CardSetores
             foto="/images/patrimonio.png"
             titulo="Patrimônio"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
+            texto={textos.patrimonio}
           />
         </CardsWrapper>
       </Background>

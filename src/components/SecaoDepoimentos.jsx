@@ -1,8 +1,18 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import CardSetores from "./CardSetores";
+import DepoimentoCard from "./DepoimentoCard";
+import DepoimentoTi from "../depoimentos/ti.json";
+import DepoimentoAcademico from "../depoimentos/academico.json";
+import DepoimentoEventos from "../depoimentos/eventos.json";
+import DepoimentoEsportivo from "../depoimentos/esportivo.json";
+import DepoimentoGp from "../depoimentos/gp.json";
+import DepoimentoAdm from "../depoimentos/adm.json";
+import DepoimentoPatrimonio from "../depoimentos/patrimonio.json";
+import BtnPrimary from "./Btn/BtnPrimary";
+
 export default function SecaoDepoimentos() {
   const responsive = {
     superLargeDesktop: {
@@ -14,14 +24,45 @@ export default function SecaoDepoimentos() {
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 671 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 670, min: 0 },
       items: 1,
     },
   };
+
+  const [categoria, setCategoria] = useState("ti");
+  const [depoimentos, setDepoimentos] = useState(DepoimentoTi);
+
+  useEffect(() => {
+    switch (categoria) {
+      case "ti":
+        setDepoimentos(DepoimentoTi);
+        break;
+      case "academico":
+        setDepoimentos(DepoimentoAcademico);
+        break;
+      case "eventos":
+        setDepoimentos(DepoimentoEventos);
+        break;
+      case "esportivo":
+        setDepoimentos(DepoimentoEsportivo);
+        break;
+      case "gp":
+        setDepoimentos(DepoimentoGp);
+        break;
+      case "adm":
+        setDepoimentos(DepoimentoAdm);
+        break;
+      case "patrimonio":
+        setDepoimentos(DepoimentoPatrimonio);
+        break;
+      default:
+        setDepoimentos(DepoimentoTi);
+    }
+  }, [categoria]);
 
   return (
     <Container id="depoimentos">
@@ -48,37 +89,53 @@ export default function SecaoDepoimentos() {
         autoPlaySpeed={3000}
         infinite={true}
       >
-        <div>
-          <CardSetores
-            foto="/images/academico.png"
-            titulo="Acadêmico"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
-          />
-        </div>
-        <div>
-          <CardSetores
-            foto="/images/academico.png"
-            titulo="Acadêmico"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
-          />
-        </div>
-        <div>
-          <CardSetores
-            foto="/images/academico.png"
-            titulo="Acadêmico"
-            texto="Lorem ipsum is simply dummy text of the printing and typesetti..."
-          />
-        </div>
+        {depoimentos?.map((depoimento) => (
+          <div key={depoimento.nome}>
+            <DepoimentoCard
+              nome={depoimento.nome}
+              foto={depoimento.foto}
+              depoimento={depoimento.depoimento}
+            />
+          </div>
+        ))}
       </Carousel>
       <ButtonsStack>
         <div>
-          <button className="doIt item">Acadêmico</button>
-          <button className="doIt item">TI</button>
-          <button className="doIt item">Eventos</button>
-          <button className="doIt item">Esportivo</button>
-          <button className="doIt item">Gestão de Pessoas</button>
-          <button className="doIt item">Administração</button>
-          <button className="doIt item">Patrimônio</button>
+          <BtnPrimary
+            texto="Acadêmico"
+            handleClick={() => setCategoria("academico")}
+            className="doIt item"
+          />
+          <BtnPrimary
+            texto="TI"
+            handleClick={() => setCategoria("ti")}
+            className="doIt item"
+          />
+          <BtnPrimary
+            texto="Eventos"
+            handleClick={() => setCategoria("eventos")}
+            className="doIt item"
+          />
+          <BtnPrimary
+            texto="Esportivo"
+            handleClick={() => setCategoria("esportivo")}
+            className="doIt item"
+          />
+          <BtnPrimary
+            texto="Gestão de Pessoas"
+            handleClick={() => setCategoria("gp")}
+            className="doIt item"
+          />
+          <BtnPrimary
+            texto="Administração"
+            handleClick={() => setCategoria("adm")}
+            className="doIt item"
+          />
+          <BtnPrimary
+            texto="Patrimônio"
+            handleClick={() => setCategoria("patrimonio")}
+            className="doIt item"
+          />
         </div>
       </ButtonsStack>
     </Container>
